@@ -15,6 +15,7 @@ fi
 
 # invoke insmod with all arguments we got
 # and use a pathname, as insmod doesn't look in . by default
+shift
 modprobe $module $* || exit 1
 
 # retrieve major number
